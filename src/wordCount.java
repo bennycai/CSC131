@@ -8,7 +8,7 @@ public class wordCount {
         int fileCount = 0;
         System.out.println("Please enter wc, wc-l, wc-c, wc-w");
         String answer = sc.nextLine();
-        while (!answer.equals("wc") && !answer.equals("wc=l") && !answer.equals("wc-c") && !answer.equals("wc-w")) {
+        while (!answer.equals("wc") && !answer.equals("wc-l") && !answer.equals("wc-c") && !answer.equals("wc-w")) {
             System.out.println("Please enter a valid response: wc, wc-1, wc-c or wc-w");
             answer = sc.nextLine();
         }
@@ -42,11 +42,11 @@ public class wordCount {
                 if (answer.equals("wc")) {
                     System.out.println(test.toString());
                 } else if (answer.equals("wc-l")) {
-                    System.out.println(test.getLine());
+                    System.out.println(test.getLine() + " lines");
                 } else if (answer.equals("wc-w")) {
-                    System.out.println(test.getWordCount(file));
+                    System.out.println(test.getWordCount(file) + " words");
                 } else if (answer.equals("wc-c")) {
-                    System.out.println(test.splitChar(file));
+                    System.out.println(test.splitChar(file) + " chars");
                 }
                 }
             }

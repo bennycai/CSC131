@@ -25,6 +25,6 @@ public class fileReader {
     }
     public String toString (){
         //System.out.println(file);
-        return file;
+        return String.valueOf(splitChar(file) + " characters " + getLine() +" lines "+ getWordCount(file)+" words ");
     }
 }
